@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "tL7Hv5Nkz5Th2dlD52eYszvvoGuXXW0phCButY+Dyw0=",
+  "Hash": "II8ZQH9fisLtM31BIYfDwusr0kWV8jhsv8f+fRaF1t4=",
   "Source": "RpgApi",
   "BasePath": "_content/RpgApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
