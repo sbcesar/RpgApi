@@ -1,31 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cesar\\OneDrive\\Documents\\2DAM\\PSP\\RPGAPI\\RpgApi\\RpgApi.csproj": {}
+    "C:\\Users\\cesar\\Desktop\\2DAM\\PSPCSharp\\ApiRestPSP\\RPGApi\\RpgApi\\RpgApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cesar\\OneDrive\\Documents\\2DAM\\PSP\\RPGAPI\\RpgApi\\RpgApi.csproj": {
+    "C:\\Users\\cesar\\Desktop\\2DAM\\PSPCSharp\\ApiRestPSP\\RPGApi\\RpgApi\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cesar\\OneDrive\\Documents\\2DAM\\PSP\\RPGAPI\\RpgApi\\RpgApi.csproj",
+        "projectUniqueName": "C:\\Users\\cesar\\Desktop\\2DAM\\PSPCSharp\\ApiRestPSP\\RPGApi\\RpgApi\\RpgApi.csproj",
         "projectName": "RpgApi",
-        "projectPath": "C:\\Users\\cesar\\OneDrive\\Documents\\2DAM\\PSP\\RPGAPI\\RpgApi\\RpgApi.csproj",
+        "projectPath": "C:\\Users\\cesar\\Desktop\\2DAM\\PSPCSharp\\ApiRestPSP\\RPGApi\\RpgApi\\RpgApi.csproj",
         "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cesar\\OneDrive\\Documents\\2DAM\\PSP\\RPGAPI\\RpgApi\\obj\\",
+        "outputPath": "C:\\Users\\cesar\\Desktop\\2DAM\\PSPCSharp\\ApiRestPSP\\RPGApi\\RpgApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +41,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -53,6 +50,10 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.2.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -78,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

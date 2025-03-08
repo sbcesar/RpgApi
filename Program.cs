@@ -1,7 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using RpgApi.Models;
+using RpgApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.Configure<PlayerDatabaseSettings>(
+    builder.Configuration.GetSection("PlayerDatabase"));
+
+builder.Services.AddSingleton<PlayerService>();
 
 builder.Services.AddControllers();
 
