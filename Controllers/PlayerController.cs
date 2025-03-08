@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using RpgApi.Models;
 using RpgApi.Services;
@@ -28,14 +29,14 @@ public class PlayerController : ControllerBase
 
     // Actualizar el score de un jugador
     [HttpPut("{id}")]
-    public IActionResult UpdateScore(int id, [FromBody] int newScore)
+    public async Task<IActionResult> UpdateScore(int id, [FromBody] Player player)
     {
-        var player = _playerService.GetAsync(id).Result;
-        if (player == null)
+        var playerDb = _playerService.GetAsync(id).Result;
+        if (playerDb == null)
             return NotFound("Jugador no encontrado.");
 
-        player.Score = newScore;
-        _playerService.UpdateAsync(id, player).Wait();
+        
+        await _playerService.UpdateAsync(id, player);
 
         return Ok($"Nuevo score: {player.Score}");
     }
