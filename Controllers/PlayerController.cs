@@ -17,9 +17,9 @@ public class PlayerController : ControllerBase
 
     // Obtener el score de un jugador
     [HttpGet("{id}")]
-    public IActionResult GetScore(int id)
+    public async Task<IActionResult> GetScore(int id)
     {
-        var player = _playerService.GetAsync(id).Result;
+        var player = await _playerService.GetAsync(id);
         if (player == null)
             return NotFound("Jugador no encontrado.");
 
@@ -42,13 +42,13 @@ public class PlayerController : ControllerBase
 
     // Crear un nuevo jugador
     [HttpPost]
-    public IActionResult CreatePlayer([FromBody] Player player)
+    public async Task<IActionResult> CreatePlayer([FromBody] Player player)
     {
-        var playerDb = _playerService.GetAsync(player.Id).Result;
+        var playerDb = await _playerService.GetAsync(player.Id);
         if (playerDb != null)
             return BadRequest("Jugador ya existe.");
 
-        _playerService.CreateAsync(player).Wait();
+        await _playerService.CreateAsync(player);
 
         return Ok(player);
     }
